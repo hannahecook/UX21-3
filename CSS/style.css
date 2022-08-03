@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display:wght@600&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@300;500&display=swap');
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #000000;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: #000000;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(163, 177, 134);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}
+
+.form-input {
+margin-bottom: 15px;
+}
+
+input {
+  padding: 10px 20px;
+  width: 50%;
+  outline: none;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 40px;
+  background-color: rgb(111, 126, 82);
+  color: white;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
+header ul {
+  float: right;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+button {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 50px;
+}
+footer {
+  background-color: #ffffff;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  font-family: 'Quicksand', sans-serif;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.heading {
+  text-align: center;
+
+  font-size: 40px;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+.flexContainer div {
+  width: 33%;
+  padding: 25px;
+}
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 10px;
+  background-color: rgb(255, 238, 208);
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(255, 238, 208);
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 0px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 70px;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+
+
+.myWork1 {
+  padding: 0px;
+  padding-top: 0px;
+  background-color: rgb(149, 163, 119);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+.workGrid1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px;
+  grid-template-areas:
+  "img1 content1"
+  ;
+}
+.workGrid1 img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+.imga {
+  grid-area: img1;
+}
+.imga, .imgb, .imgc, .contenta, .contentb, .contentc {
+  padding: 0px;
+}
+.contenta {
+  grid-area: content1;
+}
+.contentb {
+  grid-area: content2;
+}
+.contentc {
+  grid-area: content3;
+}
+
+.centerp {
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    float: none;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.firstp {
+    background-color: rgb(255, 238, 208);
+}
+
+.jumbotron {
+    margin-left: 2.5em
+}
